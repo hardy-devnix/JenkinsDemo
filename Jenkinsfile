@@ -17,5 +17,10 @@ pipeline {
 			   echo 'Deploy'
 			      }
 			             }
+	        stage ('Scan') {
+			steps {
+			   echo 'Scan for vulnerabilities'
+			      }
+			             }
             }			 
 		}  
